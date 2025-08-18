@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://l3uuvu1rp2td"]
+
+[ext_resource type="Script" uid="uid://hg3es1bg8p0g" path="res://node_2d.gd" id="1_wtcfe"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_wtcfe")
+
+[node name="Button" type="Button" parent="."]
+offset_left = 338.0
+offset_top = 317.0
+offset_right = 785.0
+offset_bottom = 415.0
+text = "CLIQUE AQUI!"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
