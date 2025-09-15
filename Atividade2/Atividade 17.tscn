@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bkiwl7ntwh55e"]
 
-[ext_resource type="Script" uid="uid://cf0be1n1vyprb" path="res://Atividade17_Miriellen e Tiffany/atividade_17.gd" id="1_wmpgr"]
+[ext_resource type="Script" uid="uid://cf0be1n1vyprb" path="res://atividade_17.gd" id="1_x6pcf"]
 
 [node name="Atividade17" type="Control"]
 layout_mode = 3
@@ -13,7 +13,7 @@ offset_right = 3.0
 offset_bottom = -58.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_wmpgr")
+script = ExtResource("1_x6pcf")
 
 [node name="TextEdit" type="TextEdit" parent="."]
 layout_mode = 0

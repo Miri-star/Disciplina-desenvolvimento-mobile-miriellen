@@ -1,0 +1,57 @@
+[gd_scene load_steps=4 format=3 uid="uid://bvtyd6up7uh6"]
+
+[ext_resource type="Script" uid="uid://djkfwxdaaqo46" path="res://Atividade17_Miriellen e Tiffany/atv_18.gd" id="1_wbb0a"]
+[ext_resource type="Texture2D" uid="uid://05tq651xswy5" path="res://Atividade17_Miriellen e Tiffany/circle-regular-full.svg" id="2_r7tix"]
+[ext_resource type="Texture2D" uid="uid://dtdc7lxrl4485" path="res://Atividade17_Miriellen e Tiffany/azul.svg" id="3_7p8ox"]
+
+[node name="Atv18" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 9769.0
+offset_top = 2840.0
+offset_right = 9488.0
+offset_bottom = 3146.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wbb0a")
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = -9623.0
+offset_top = -2860.0
+offset_right = -8983.0
+offset_bottom = -2220.0
+value = 15.0
+fill_mode = 5
+texture_under = ExtResource("2_r7tix")
+texture_progress = ExtResource("3_7p8ox")
+
+[node name="Label" type="Label" parent="TextureProgressBar"]
+layout_mode = 0
+offset_left = 237.0
+offset_top = 221.0
+offset_right = 553.0
+offset_bottom = 557.0
+scale = Vector2(0.5, 0.5)
+theme_override_font_sizes/font_size = 200
+text = "1"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = -9021.0
+offset_top = -2432.0
+offset_right = -8847.0
+offset_bottom = -2276.0
+text = "+10
+"
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.3
+autostart = true
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
