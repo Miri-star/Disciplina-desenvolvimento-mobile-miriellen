@@ -1,8 +1,21 @@
-[gd_scene load_steps=4 format=3 uid="uid://bvtyd6up7uh6"]
+[gd_scene load_steps=7 format=3 uid="uid://bvtyd6up7uh6"]
 
 [ext_resource type="Script" uid="uid://djkfwxdaaqo46" path="res://Atividade17_Miriellen e Tiffany/atv_18.gd" id="1_wbb0a"]
 [ext_resource type="Texture2D" uid="uid://05tq651xswy5" path="res://Atividade17_Miriellen e Tiffany/circle-regular-full.svg" id="2_r7tix"]
 [ext_resource type="Texture2D" uid="uid://dtdc7lxrl4485" path="res://Atividade17_Miriellen e Tiffany/azul.svg" id="3_7p8ox"]
+
+[sub_resource type="Curve" id="Curve_wbb0a"]
+_limits = [-360.0, 360.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.721591, 360), 0.0, 0.0, 0, 0]
+point_count = 2
+
+[sub_resource type="Curve" id="Curve_r7tix"]
+_limits = [-200.0, 200.0, 0.0, 1.0]
+_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(0.895028, 200), 0.0, 0.0, 0, 0, Vector2(1, 1), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="Gradient" id="Gradient_7p8ox"]
+colors = PackedColorArray(0.70795, 0.566528, 0.863281, 1, 1, 1, 1, 1)
 
 [node name="Atv18" type="Control"]
 layout_mode = 3
@@ -19,10 +32,10 @@ script = ExtResource("1_wbb0a")
 
 [node name="TextureProgressBar" type="TextureProgressBar" parent="."]
 layout_mode = 0
-offset_left = -9623.0
-offset_top = -2860.0
-offset_right = -8983.0
-offset_bottom = -2220.0
+offset_left = -9605.0
+offset_top = -2834.0
+offset_right = -8965.0
+offset_bottom = -2194.0
 value = 15.0
 fill_mode = 5
 texture_under = ExtResource("2_r7tix")
@@ -35,10 +48,31 @@ offset_top = 221.0
 offset_right = 553.0
 offset_bottom = 557.0
 scale = Vector2(0.5, 0.5)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 200
 text = "1"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="GPUParticles2D" type="CPUParticles2D" parent="TextureProgressBar"]
+position = Vector2(320, 311)
+emitting = false
+amount = 100
+fixed_fps = 30
+draw_order = 1
+emission_shape = 3
+emission_rect_extents = Vector2(1, 1)
+gravity = Vector2(0, 0)
+angular_velocity_curve = SubResource("Curve_wbb0a")
+linear_accel_min = 5.94
+linear_accel_max = 9.9
+linear_accel_curve = SubResource("Curve_r7tix")
+radial_accel_min = -1.98
+radial_accel_max = 19.8
+scale_amount_min = 0.0
+scale_amount_max = 3.0
+color = Color(0.485542, 0.431885, 0.953125, 1)
+color_initial_ramp = SubResource("Gradient_7p8ox")
 
 [node name="Button" type="Button" parent="."]
 layout_mode = 0
