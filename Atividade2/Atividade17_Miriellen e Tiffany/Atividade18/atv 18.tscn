@@ -1,8 +1,8 @@
 [gd_scene load_steps=7 format=3 uid="uid://bvtyd6up7uh6"]
 
-[ext_resource type="Script" uid="uid://djkfwxdaaqo46" path="res://Atividade17_Miriellen e Tiffany/atv_18.gd" id="1_wbb0a"]
-[ext_resource type="Texture2D" uid="uid://05tq651xswy5" path="res://Atividade17_Miriellen e Tiffany/circle-regular-full.svg" id="2_r7tix"]
-[ext_resource type="Texture2D" uid="uid://dtdc7lxrl4485" path="res://Atividade17_Miriellen e Tiffany/azul.svg" id="3_7p8ox"]
+[ext_resource type="Script" uid="uid://djkfwxdaaqo46" path="res://Atividade17_Miriellen e Tiffany/Atividade18/atv_18.gd" id="1_wbb0a"]
+[ext_resource type="Texture2D" uid="uid://05tq651xswy5" path="res://Atividade17_Miriellen e Tiffany/Atividade18/circle-regular-full.svg" id="2_r7tix"]
+[ext_resource type="Texture2D" uid="uid://dtdc7lxrl4485" path="res://Atividade17_Miriellen e Tiffany/Atividade18/azul.svg" id="3_7p8ox"]
 
 [sub_resource type="Curve" id="Curve_wbb0a"]
 _limits = [-360.0, 360.0, 0.0, 1.0]

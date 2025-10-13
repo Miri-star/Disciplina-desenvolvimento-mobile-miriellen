@@ -11,6 +11,6 @@ config_version=5
 [application]
 
 config/name="Atividade 2 - 18.08"
-run/main_scene="res://node_2d.tscn"
+run/main_scene="uid://nbyga0oj8sa2"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"

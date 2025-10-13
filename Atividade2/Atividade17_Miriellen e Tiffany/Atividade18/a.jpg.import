@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://05tq651xswy5"
-path="res://.godot/imported/circle-regular-full.svg-c1b064a0c273c911bcabf3dd1dc59751.ctex"
+uid="uid://dxgooypn4rcsb"
+path="res://.godot/imported/a.jpg-ff27890b5699171fba9c92133c73b07a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Atividade17_Miriellen e Tiffany/circle-regular-full.svg"
-dest_files=["res://.godot/imported/circle-regular-full.svg-c1b064a0c273c911bcabf3dd1dc59751.ctex"]
+source_file="res://Atividade17_Miriellen e Tiffany/Atividade18/a.jpg"
+dest_files=["res://.godot/imported/a.jpg-ff27890b5699171fba9c92133c73b07a.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false

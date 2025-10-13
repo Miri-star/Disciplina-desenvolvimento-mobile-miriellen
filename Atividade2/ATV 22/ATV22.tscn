@@ -1,0 +1,88 @@
+[gd_scene load_steps=12 format=3 uid="uid://bmiycwwygovrx"]
+
+[ext_resource type="Texture2D" uid="uid://byoopbavhmcbc" path="res://ATV 22/sapo.webp" id="1_fcy36"]
+[ext_resource type="Script" uid="uid://b7qcw2652i1nh" path="res://ATV 22/atv_22 main.gd" id="1_tlyqg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tlyqg"]
+atlas = ExtResource("1_fcy36")
+region = Rect2(0, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qj3dx"]
+atlas = ExtResource("1_fcy36")
+region = Rect2(64, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1eoct"]
+atlas = ExtResource("1_fcy36")
+region = Rect2(128, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ienjx"]
+atlas = ExtResource("1_fcy36")
+region = Rect2(192, 0, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j7dbd"]
+atlas = ExtResource("1_fcy36")
+region = Rect2(0, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kqucp"]
+atlas = ExtResource("1_fcy36")
+region = Rect2(64, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_24iw4"]
+atlas = ExtResource("1_fcy36")
+region = Rect2(128, 64, 64, 64)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_m1r8b"]
+atlas = ExtResource("1_fcy36")
+region = Rect2(192, 64, 64, 64)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_b2osa"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tlyqg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qj3dx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1eoct")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ienjx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j7dbd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kqucp")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_24iw4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_m1r8b")
+}],
+"loop": true,
+"name": &"jump",
+"speed": 5.0
+}]
+
+[node name="Atv22" type="Node2D"]
+position = Vector2(1, 0)
+script = ExtResource("1_tlyqg")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(525, 127)
+scale = Vector2(2.26056, 2.11684)
+sprite_frames = SubResource("SpriteFrames_b2osa")
+animation = &"jump"
+speed_scale = 2.5
+
+[node name="Button" type="Button" parent="."]
+offset_left = 445.0
+offset_top = 203.0
+offset_right = 602.0
+offset_bottom = 273.0
+text = "Executar Animação"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

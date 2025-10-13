@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dtdc7lxrl4485"
-path="res://.godot/imported/azul.svg-a4a2afb879853cb94c55cd182ddffcce.ctex"
+uid="uid://byoopbavhmcbc"
+path="res://.godot/imported/sapo.webp-4f66154eeea1a7aec843e35e480d5611.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Atividade17_Miriellen e Tiffany/azul.svg"
-dest_files=["res://.godot/imported/azul.svg-a4a2afb879853cb94c55cd182ddffcce.ctex"]
+source_file="res://ATV 22/sapo.webp"
+dest_files=["res://.godot/imported/sapo.webp-4f66154eeea1a7aec843e35e480d5611.ctex"]
 
 [params]
 
@@ -32,6 +32,3 @@ process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
 detect_3d/compress_to=1
-svg/scale=1.0
-editor/scale_with_editor_scale=false
-editor/convert_colors_with_editor_theme=false
